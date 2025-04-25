@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자를 통해 페이지의 마진과 패딩을 지정한다. 사이즈 지정시 0인
+            경우에는 px단위를 생략할 수 있다. */
+        *{margin: 0; padding: 0;}
+        div {
+            width: 200px; height: 200px; line-height: 200px;
+            text-align: center; border: 1px solid red; padding: 10px;
+        }
+        #box1 {
+            border: 0; padding: 0; background-color: orange;
+        }
+        #box2 {
+            border-color: purple;
+            box-sizing: border-box;
+        }
+        #box3 {
+            border-color: #cecece;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>box-sizing 속성</h2>
+
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+</body>
+</html>
