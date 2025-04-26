@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: rgb(202, 202, 202);
+            border-spacing: 5px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 400px;
+            color: #DDDDDD;
+        }
+
+        table, th {
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .result th {
+            background-color: #70C738;
+            color: black;
+            text-align: right;
+            font-size: 45px;
+            padding-right: 20px;
+            height: 25%;
+        }
+
+        .backspace th {
+            background-color: gray;
+        }
+
+        .operator th {
+            background-color: #373737;
+        }
+
+        .operator th:last-child {
+            background-color: #FA960A;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+        </colgroup>
+        <tr class="result">
+            <th colspan="4">123 + 654</th>
+        </tr>
+        <tr class="backspace">
+            <th colspan="2">BackSpace</th>
+            <th colspan="2">C</th>
+        </tr>
+        <tr class="operator">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>/</th>
+        </tr>
+        <tr class="operator">
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>x</th>
+        </tr>
+        <tr class="operator">
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>+</th>
+        </tr>
+        <tr class="operator">
+            <th>=</th>
+            <th>0</th>
+            <th>.</th>
+            <th>-</th>
+        </tr>
+    </table>
+    
+</body>
+</html>
