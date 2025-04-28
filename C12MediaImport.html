@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import
+            - <lint>태그를 대체할 수 있다.
+            - style 태그 안에서 사용해야 하고 반드시 최상단에 선언해야 한다.
+            - CSS파일에 오류가 있는 경우 다운로드 하지 않는다. */
+        @import url('./style/import.css');
+        .content {
+            background-color: black; color: red;
+        }
+
+        /* @media
+            - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을 구성할 수
+                있도록 해준다.
+            - 스크림(모니터)용과 프린터(출력물)용으로 구분할 수 있다. */
+        @media screen {
+            /* 모니터에서는 검은 배경에 흰색글씨로 표현 */
+            .content {
+                background-color: black; color: white;
+            }
+        }
+
+        @media print {
+            /* 프린트할때는 빨간바탕에 노란글씨로 표현 */
+            .content {
+                background-color: red; color: yellow;
+            }
+        }
+        /* 모든 웹브라우저는 배경색 출력을 허용하지 않는 것이 디폴트 설정이므로
+            고급설정에서 '배경색인쇄'를 체크해야 확인할 수 있다. */
+    </style>
+</head>
+<body>
+    <h2>@media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>[현장]90분 기다리고 받은 번호표 '31번'..."SKT 유심, 내일 바꿀 수 있다네요"</h3>
+            유심(USIM) 정보 해킹 사고 열흘째를 맞은 SK텔레콤이 '유심 무료 교체 예약 시스템'을 
+            운영한다고 밝혔다. 하지만 유심 교체를 바라는 모든 가입자가 바꿀 때까지는 시간이 
+            꽤 걸릴 것으로 예측되는 만큼 대리점 등 현장에서는 혼란이 계속됐다. 일부 가입자는 집단 
+            행동을 통해 SK텔레콤을 압박하고 나섰다.
+        </p>
+    </div>
+</body>
+</html>
